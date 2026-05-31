@@ -2,6 +2,7 @@ import express from 'express';
 import userRoutes from './routes/users.routes.js';
 import productRoutes from "./routes/products.routes.js";
 import addrequestTime from './middlewares/requestTime.middleware.js';
+import notesRoute from "./routes/notes.routes.js";
 import Logger from './middlewares/logger.middleare.js';
 import errorHandler from './middlewares/errorHandler.middleware.js';
 
@@ -23,6 +24,8 @@ app.get("/", (req,res)=>{
 app.use("/api", userRoutes);
 
 app.use("/api",productRoutes);
+
+app.use("/notes", notesRoute);
 
 app.use(errorHandler);
 app.listen(8000, ()=>{
