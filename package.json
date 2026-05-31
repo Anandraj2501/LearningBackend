@@ -1,0 +1,15 @@
+{
+  "name": "serverside",
+  "version": "1.0.0",
+  "description": "Learning backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anand",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
